@@ -24,14 +24,14 @@
 - type (Food Bank, Grocery Store , Restaurant)
 - address String
 - email String
-- phone_num Int
+- phone_num String
 - approved_by_super_admin Boolean
 - created_on Timestamp
 - updated_on Timestamp
 
 ### ProviderEmployee Profile Model -> (The employee that creates a Provider has admin credentials by default true is_admin :) )
 - provider_employee_id PK/FK from Accounts (one-one from accounts) 
-- provider_id FK
+- provider_id FK (one provider can have many ProviderEmployees)
 - is_admin
 - first name String
 - last name String
